@@ -15,7 +15,7 @@ contract ACPolicy is mortal {
     int acLimit;
     
     /* This runs when the contract is executed */
-    function update(int newLimit) private {
+    function update(int newLimit) public {
         acLimit = newLimit;
     }
 
